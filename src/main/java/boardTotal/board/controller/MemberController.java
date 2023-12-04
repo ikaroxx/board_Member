@@ -28,6 +28,7 @@ public class MemberController {
         System.out.println("memberDTO = " + memberDTO);
         memberService.save(memberDTO);
         return "login";
+
     }
 
     @GetMapping("/member/login")

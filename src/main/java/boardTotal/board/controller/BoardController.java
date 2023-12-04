@@ -21,6 +21,13 @@ import java.util.List;
 public class BoardController {
     private final BoardService boardService;
     private final CommentService commentService;
+
+    @GetMapping("/index")
+    public String index(){
+        return "index";
+
+    }
+
     @GetMapping("/save")
     public String saveForm() {
         return "save";
